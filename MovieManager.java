@@ -1,5 +1,5 @@
 
-package moviemanager;
+package MovieManager;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,10 +18,10 @@ public class MovieManager {
 
     //private static Album album;
     //private static Movie movie;
-    private static ArrayList<MediaItem> MediaList;
-    private static ArrayList<MediaItem> MovieList;
-    private static ArrayList<MediaItem> AlbumList;
-    private static ArrayList<MediaItem> SortedMediaList;
+    private static ArrayList<MediaItem> MediaList = new ArrayList<>();
+    private static ArrayList<MediaItem> MovieList = new ArrayList<>();
+    private static ArrayList<MediaItem> AlbumList = new ArrayList<>();
+    private static ArrayList<MediaItem> SortedMediaList = new ArrayList<>();
     
     //Constructor
     public MovieManager(){
@@ -63,6 +63,7 @@ public class MovieManager {
      * @param args the command line arguments
      */
     public static void main(String[] args){
+        //MovieManager();
         createCollectionFile();
         try {
             menu(MediaList);

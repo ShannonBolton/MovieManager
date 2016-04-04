@@ -1,5 +1,5 @@
 
-package moviemanager;
+package MovieManager;
 
 /**
  *
